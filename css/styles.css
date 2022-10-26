@@ -283,7 +283,6 @@ color: var(--color-text);
 
 .form-input-lable-area:focus {
 border-color: var(--color-logo-accent);
-fill: var(--color-logo-accent);
 }
 
 .form-input-lable-area {
@@ -330,10 +329,6 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input-lable-svg:focus {
-fill: currentColor
-}
-
 .checkbox-check {
 appearance: none;
 }
@@ -355,15 +350,16 @@ color: var(--color-text);
 margin-right: 4px;
 }
 
-.form-checkbox-lable::before {
-content: "";
-display: inline-block;
-width: 16px;
-height: 15px;
-margin-right: 7px;
-border: 2px solid var(--color-primary);
+.accept-icon-svg {
+display: flex;
 border-radius: 2px;
-transition-property: all;
+justify-content: center;
+align-items: center;
+border: 2px;
+background-color: var(--color-background-1);
+border-color: var(--color-primary);
+fill: var(--color-background-1);
+transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -717,6 +713,7 @@ align-items: baseline;
 .footer-join-container {
 align-items: baseline;
 margin-left: 70px;
+margin-right: 93px;
 }
 
 .join {
@@ -763,6 +760,64 @@ background-color: var(--color-logo-accent);
 
 .soc-icon {
 fill: currentColor;
+}
+
+.follow-us-form {
+display: flex;
+}
+
+.follow-us-title {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--color-background-1);
+margin-bottom: 20px;
+}
+
+.follow-us-form-field {
+width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: var(--color-background-2);
+margin-right: 12px;
+padding-left: 16px;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+outline: none;
+}
+
+.follow-us-btn {
+display: flex;
+width: 200px;
+height: 50px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+color: var(--color-background-1);
+background-color: var(--color-logo-accent);
+box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+border-radius: 4px;
+cursor: pointer;
+justify-content: center;
+align-items: center;
+border: none;
+transition-property: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.follow-us-btn-text {
+margin-right: 10px;
+}
+
+.follow-us-btn-svg {
+justify-content: center;
+align-items: center;
+fill: var(--color-background-1);
 }
 
 /* PORTFOLIO.HTML */
