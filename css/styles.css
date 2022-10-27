@@ -330,35 +330,36 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 appearance: none;
 }
 
-.form-check-box {
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-}
-
 .form-checkbox-lable {
 display: flex;
 align-items: center;
 justify-content: center;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.714;
-letter-spacing: 0.03em;
-color: var(--color-text);
-margin-right: 7px;
 }
 
 .accept-icon-svg {
-border-radius: 2px;
+display: flex;
+margin-right: 7px;
 border: 2px solid var(--color-primary);
-background-color: var(--color-background-1);
-fill: var(--color-background-1);
-transition-property: color, background-color;
+border-radius: 3px;
+top: 50%;
+transition-property: border-color background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-left: 0;
-position: absolute;
+fill: var(--color-background-1);
+}
+
+.checkbox-check:checked + .accept-icon-svg {
+border-color: var(--color-logo-accent);
+background-color: var(--color-logo-accent);
+}
+
+.accept-text {
+display: block;
+padding-right: 5px;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--color-text);
 }
 
 .form-checkbox-link {
