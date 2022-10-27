@@ -206,11 +206,7 @@ width: 216px;
 height: 50px;
 border-radius: 4px;
 letter-spacing: 0.06em;
-}
-
-.button-order:hover,
-.button-order:focus {
-cursor: pointer;
+cursor: pointer
 }
 
 .backdrop {
@@ -285,6 +281,10 @@ color: var(--color-text);
 border-color: var(--color-logo-accent);
 }
 
+.form-input-lable-area:focus + .form-input-lable-svg {
+fill: var(--color-logo-accent);
+}
+
 .form-input-lable-area {
 width: 100%;
 height: 40px;
@@ -293,7 +293,7 @@ border-radius: 4px;
 padding: 11px 0 11px 42px;
 margin-top: 4px;
 outline: none;
-transition-property: all;
+transition-property: border-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -312,9 +312,6 @@ border-radius: 4px;
 padding: 12px 16px;
 margin-top: 4px;
 outline: none;
-transition-property: border-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 resize: none;
 }
 
@@ -324,7 +321,7 @@ top: 72%;
 left: 4%;
 transform: translateY(-72%);
 fill: var(--color-primary);
-transition-property: all;
+transition-property: fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -337,31 +334,31 @@ appearance: none;
 display: flex;
 align-items: center;
 justify-content: center;
+position: relative;
 }
 
 .form-checkbox-lable {
 display: flex;
 align-items: center;
+justify-content: center;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
 color: var(--color-text);
-margin-right: 4px;
+margin-right: 7px;
 }
 
 .accept-icon-svg {
-display: flex;
 border-radius: 2px;
-justify-content: center;
-align-items: center;
-border: 2px;
+border: 2px solid var(--color-primary);
 background-color: var(--color-background-1);
-border-color: var(--color-primary);
 fill: var(--color-background-1);
 transition-property: color, background-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+left: 0;
+position: absolute;
 }
 
 .form-checkbox-link {
@@ -409,13 +406,21 @@ border: 1px solid rgba(0,0,0,0.1);
 background-color: var(--color-background-1);
 border-radius: 50%;
 cursor: pointer;
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button-icon {
-fill: var(--color-logo);
+transition-property: fill;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-property: background-color;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+fill: var(--color-logo);
+}
+
+.close-button:hover .close-button-icon,
+.close-button:focus .close-button-icon {
+fill: var(--color-logo-accent);
 }
 
 /* BENEFITS SECTION */
@@ -911,9 +916,9 @@ padding-left: 24px;
 padding-top: 20px;
 padding-bottom: 20px;
 padding-right: 24px;
-border-bottom: 1px solid #EEEEEE;
-border-left: 1px solid #EEEEEE;
-border-right: 1px solid #EEEEEE;
+border-bottom: 1px solid var(--color-background-1);
+border-left: 1px solid var(--color-background-1);
+border-right: 1px solid var(--color-background-1);
 }
 
 .type-of-project {

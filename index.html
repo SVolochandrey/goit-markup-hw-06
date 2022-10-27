@@ -473,7 +473,7 @@
               name="foolow-email"
               placeholder="E-mail"
             />
-            <button type="follow" class="follow-us-btn">
+            <button type="submit" class="follow-us-btn">
               <span class="follow-us-btn-text">Підписатися</span>
               <svg class="follow-us-btn-svg" width="24px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-subcribe"></use>
@@ -536,9 +536,6 @@
               ></textarea>
             </div>
             <div class="form-check-box">
-              <svg class="accept-icon-svg" width="16px" height="15px">
-                <use href="./images/symbol-defs.svg#icon-galochka"></use>
-              </svg>
               <label class="form-checkbox-lable" for="idcheckbox"
                 >Погоджуюся з розсилкою та приймаю
                 <input
@@ -547,7 +544,11 @@
                   name="user-polisy"
                   vallue="accept-polisy"
                   class="checkbox-check"
-              /></label>
+                />
+                <svg class="accept-icon-svg" width="16px" height="15px">
+                  <use href="./images/symbol-defs.svg#icon-galochka"></use>
+                </svg>
+              </label>
               <a href class="form-checkbox-link">Умови договору</a>
             </div>
             <button type="submit" class="send-btn">Відправити</button>
