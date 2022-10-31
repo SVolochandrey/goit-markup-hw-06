@@ -198,7 +198,6 @@ margin-bottom: 30px;
 .button-order {
 background-color: var(--color-logo-accent);
 color: var(--color-background-1);
-font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.875;
@@ -207,8 +206,12 @@ height: 50px;
 border-radius: 4px;
 letter-spacing: 0.06em;
 cursor: pointer;
+border: none;
 }
 
+.button-order:hover {
+background-color: var(--color-dark-blue);
+}
 /* MODAL */
 
 .backdrop {
